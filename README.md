@@ -22,14 +22,14 @@ decode morse code.
 
 ## 🛠 Built With <a name="built-with"></a>
 
-<!-- ### Tech Stack <a name="tech-stack"></a>
+### Tech Stack <a name="tech-stack"></a>
 
 <!-- <details>
 <summary>Ruby</summary>
   <ul>
     <li><a href="https://www.ruby-lang.org/es/">Ruby</a></li>
   </ul>
-</details>  -->
+</details>
 
 ### 🌸 Key Features <a name="key-features"></a>
 
