@@ -13,13 +13,13 @@ def decode_char(morse_char)
 end
 
 def decode_word(morse_word)
- morse_word.split(/\s{1}/).map { |char| decode_char(char) { |letter| letter } }.join
+  morse_word.split(/\s{1}/).map { |char| decode_char(char) { |letter| letter } }.join
 end
 
 def decode(morse_message)
   morse_message.strip.split(/\s{3}/).map { |morse_word| decode_word(morse_word) }.join(' ')
 end
 
-decoded_message = decode('     .-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+decoded_message = decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
 
 puts "Decoded message: #{decoded_message}"
