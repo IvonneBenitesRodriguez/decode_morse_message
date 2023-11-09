@@ -8,13 +8,13 @@ MORSE_TO_LETTER = {
   '--..' => 'Z'
 }.freeze
 
-# def decode_char(morse_char)
-#    MORSE_TO_LETTER[morse_char]
-# end
+def decode_char(morse_char)
+  MORSE_TO_LETTER[morse_char]
+end
 
-# def decode_word(morse_word)
-#   morse_word.split(/\s{1}/).map { |char| decode_char(char) { |letter| letter } }.join
-# end
+def decode_word(morse_word)
+ morse_word.split(/\s{1}/).map { |char| decode_char(char) { |letter| letter } }.join
+end
 
 def decode(morse_message)
   morse_message.strip.split(/\s{3}/).map { |morse_word| decode_word(morse_word) }.join(' ')
